@@ -15,7 +15,7 @@ def input_shots(num_shots: int = 6):
 
 
 def show_new_board(board_size: int):
-    """print the board to the screen"""
+    """show the first board on the screen"""
 
     for i in range(board_size + 1): # show the indexes to the board
         if i == 0:
@@ -76,11 +76,15 @@ def show_rules():
           "have fun")
 
 def how_to_play():
+    """show how to play the game"""
+
     print(""
           "if you wants to hit place \n"
           "use the letters and numbers shown at the screen")
 
 def show_status(status: dict):
+    """display the status game on the screen"""
+
     print(f''',
        limit shots :{status['limit shots']}\t
         "shots fired":{status["shots fired"]}\t
@@ -96,10 +100,8 @@ def shot(board_size: int):
 
     while flag:
         user_input = input("Enter the place you want to hit")
+
     return user_input
-
-
-
 
 
 s = shot(5,"ABCDEFG")
