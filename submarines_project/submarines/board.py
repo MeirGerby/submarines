@@ -1,20 +1,9 @@
-def create_board(board_size: int = 3) -> list[list]:
+def create_board(board_size: int = 5):
     board = []
-    for i in range(board_size):
+    # letters = ' ABCDEFGHIJKLMNOPQRSTYVWXYZ'
+    # letters = letters[:board_size + 1]
+
+    for i in range(board_size):  # create board with zeros
         for j in range(board_size):
-            board.append([])
-
-    return board
-
-print(create_board())
-# # c = create_board()
-def init_board(board: list[list]) -> list[list]:
-    init = 0
-
-    for i in board:
-        i.append(init)
-
-
-    return board
-# print(init_board(c))
+            board.append(0)
 
