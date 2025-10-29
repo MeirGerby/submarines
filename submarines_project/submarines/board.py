@@ -6,8 +6,8 @@ def create_board(board_size: int = 3) -> list[list]:
 
     return board
 
-# print(create_board())
-# c = create_board()
+print(create_board())
+# # c = create_board()
 def init_board(board: list[list]) -> list[list]:
     init = 0
 

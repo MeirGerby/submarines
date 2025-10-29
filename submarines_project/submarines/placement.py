@@ -1,5 +1,5 @@
 import random
-import builtins
+
 
 
 def place_board(board: list[list]) -> list[list]:

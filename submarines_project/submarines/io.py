@@ -1,4 +1,4 @@
-def shots_allowed(num_shots: int = 6):
+def input_shots(num_shots: int = 6):
     """get shots allowed from the user or determine it to 6 shots by default"""
     user_inp = input("please enter the allowed shots \n"
                      "you want to play with this game\n"
@@ -6,13 +6,13 @@ def shots_allowed(num_shots: int = 6):
                      "\n"
                      "if you will not choose you'll get \n"
                      "6 allowed shots before the game stops:\n ")
-    user_inp = int(user_inp)
-    if user_inp not in range(1,11):
-        return shots_allowed()
+    user_input = int(user_inp)
+    if user_input not in range(1,11):
+        return input_shots()
     else:
-        return user_inp
+        return user_input
 
-shots_allowed()
+
 
 
 
